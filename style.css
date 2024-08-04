@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(218, 23%, 16%);
+    font-size: 28px;
+    font-family: 'Manrope';
+}
+
+.generator-p{
+    font-size: 28px;
+    font-family: "Manrope", sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 600px;
+    height: fit-content;
+    border-radius: 15px;
+    background-color: hsl(217, 19%, 24%);
+    box-shadow: 10px 20px 40px 25px hsl(222, 32%, 12%);
+}
+
+.img-dado{
+    background-color: hsl(150, 100%, 66%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 25px;
+    cursor: pointer;
+}
+
+.img-dado:hover{
+    box-shadow: 0px 0px 20px 5px hsl(150, 100%, 66%);
+    transition-property: box-shadow;
+    transition-duration: 0.7s;
+}
+
+.img-pause {
+    width: 90%;
+    padding-bottom: 30px;
+    }
+.img-pause::before,
+.img-pause::after {
+    content: " ";
+    opacity: 0.2;
+    width: 70%;
+    height: 1px;
+}
+
+/*.img-pause{
+    padding-bottom: 30px;
+}*/
+
+img:last-child{
+    width: 20px;
+}
+
+span{
+    color: hsl(150, 100%, 66%);
+    font-size: 0.8rem;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.generator-p{
+    padding-bottom: 30px;
+    color: white;
+    text-align: center;
+    padding-right: 35px;
+    padding-left: 35px;
+    opacity: 0.8;
+    display: flex;
+    place-items: center;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 90%;
+}
+
+/*#consejos{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
+}*/
+
+@media (min-width: 375px) and (max-width: 720px) {
+    .card{
+        max-width: 90%;
+    }
+    .img-dado:hover{
+        box-shadow: 0px 0px 20px 5px transparent;
+    }
+}
